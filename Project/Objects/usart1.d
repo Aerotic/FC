@@ -3,7 +3,7 @@
 .\objects\usart1.o: ..\Mylib\board.h
 .\objects\usart1.o: ..\Libraries\stm32f4xx.h
 .\objects\usart1.o: ..\Libraries\core_cm4.h
-.\objects\usart1.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart1.o: ..\Libraries\core_cmInstr.h
 .\objects\usart1.o: ..\Libraries\core_cmFunc.h
 .\objects\usart1.o: ..\Libraries\core_cm4_simd.h
@@ -23,9 +23,8 @@
 .\objects\usart1.o: ..\Libraries\stm32f4xx_usart.h
 .\objects\usart1.o: ..\Libraries\misc.h
 .\objects\usart1.o: ..\Mylib\usart1.h
-.\objects\usart1.o: ..\Mylib\usart2.h
-.\objects\usart1.o: ..\Mylib\board.h
 .\objects\usart1.o: ..\Mylib\dbus.h
+.\objects\usart1.o: ..\Mylib\board.h
 .\objects\usart1.o: ..\Mylib\softiic.h
 .\objects\usart1.o: ..\Mylib\mpu6050.h
 .\objects\usart1.o: ..\Mylib\hmc5883.h
@@ -35,7 +34,7 @@
 .\objects\usart1.o: ..\Mylib\height_control.h
 .\objects\usart1.o: ..\Mylib\time.h
 .\objects\usart1.o: ..\Mylib\control.h
-.\objects\usart1.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\usart1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\usart1.o: ..\Mylib\mymath.h
 .\objects\usart1.o: ..\Mylib\parameter.h
 .\objects\usart1.o: ..\Mylib\imu.h
@@ -51,4 +50,4 @@
 .\objects\usart1.o: ..\Mylib\spi.h
 .\objects\usart1.o: ..\Mylib\24l01.h
 .\objects\usart1.o: ..\Mylib\flash.h
-.\objects\usart1.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

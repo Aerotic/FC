@@ -1,5 +1,5 @@
 #include "usart1.h"
-
+//加入以下代码,支持printf函数,而不需要选择use MicroLIB	  
 #if 1
 #pragma import(__use_no_semihosting)             
 //标准库需要的支持函数                 
@@ -24,6 +24,7 @@ int fputc(int ch, FILE *f)
 }
 #endif 
 
+
 void Usart1_Config(void)
 {
 		USART_InitTypeDef USART_InitStructure;
@@ -42,7 +43,7 @@ void Usart1_Config(void)
 		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 		GPIO_Init(GPIOA,&GPIO_InitStructure);
 
-		USART_InitStructure.USART_BaudRate = 512000;
+		USART_InitStructure.USART_BaudRate = 9600;
 		USART_InitStructure.USART_WordLength = USART_WordLength_8b;
 		USART_InitStructure.USART_StopBits = USART_StopBits_1;
 		USART_InitStructure.USART_Parity = USART_Parity_No;

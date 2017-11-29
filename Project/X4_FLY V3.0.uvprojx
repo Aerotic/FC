@@ -495,11 +495,6 @@
               <FilePath>..\Mylib\mymath.c</FilePath>
             </File>
             <File>
-              <FileName>gps.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\gps.c</FilePath>
-            </File>
-            <File>
               <FileName>filter.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mylib\filter.c</FilePath>
@@ -515,6 +510,11 @@
               <FilePath>..\Mylib\inertialNav.c</FilePath>
             </File>
             <File>
+              <FileName>gps.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mylib\gps.c</FilePath>
+            </File>
+            <File>
               <FileName>spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mylib\spi.c</FilePath>
@@ -528,16 +528,6 @@
               <FileName>flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mylib\flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\usart2.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart2.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Mylib\usart2.h</FilePath>
             </File>
           </Files>
         </Group>

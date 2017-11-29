@@ -9,7 +9,7 @@ struct _throttle thr;
 void Control_Outer(float T)
 {
 	if(thr.value>=240)
-	ctrl.outer.exp.z += -RC.CH[2]*0.0006f;
+	ctrl.outer.exp.z +=- RC.CH[2]*0.0006f;
 	if(ctrl.outer.exp.z>180) ctrl.outer.exp.z-=360;
 	if(ctrl.outer.exp.z<-180) ctrl.outer.exp.z+=360;
 	
@@ -79,17 +79,17 @@ void Control_Inner(float T)
 	ctrl.inner.exp.y = LIMIT(ctrl.inner.exp.y, -MAX_CTRL_ASPEED,MAX_CTRL_ASPEED );
 	ctrl.inner.exp.z = LIMIT(ctrl.inner.exp.z, -MAX_CTRL_ASPEED,MAX_CTRL_ASPEED );
 	/* 角速度误差 */
-	ctrl.inner.err.x =  ctrl.inner.exp.x - phone.gyro_dps[0] ;
-	ctrl.inner.err.y =  ctrl.inner.exp.y - phone.gyro_dps[1] ;
-	ctrl.inner.err.z =  ctrl.inner.exp.z - phone.gyro_dps[2] ;
+	ctrl.inner.err.x =  ctrl.inner.exp.x - sensor.gyro.dps.x ;
+	ctrl.inner.err.y =  ctrl.inner.exp.y - sensor.gyro.dps.y ;
+	ctrl.inner.err.z =  ctrl.inner.exp.z - sensor.gyro.dps.z ;
 	/* 角速度误差权重 */
 	ctrl.inner.err_weight.x = ABS(ctrl.inner.err.x)/MAX_CTRL_ASPEED;
 	ctrl.inner.err_weight.y = ABS(ctrl.inner.err.y)/MAX_CTRL_ASPEED;
 	ctrl.inner.err_weight.z = ABS(ctrl.inner.err.z)/MAX_CTRL_YAW_SPEED;
 	/* 角速度微分 */
-	ctrl.inner.err_dif.x = -parameter.inner.rol.kd * ( phone.gyro_dps[0] - ctrl.inner.err_last.x)/T;
-	ctrl.inner.err_dif.y = -parameter.inner.pit.kd * ( phone.gyro_dps[1] - ctrl.inner.err_last.y)/T;
-	ctrl.inner.err_dif.z = -parameter.inner.yaw.kd * ( phone.gyro_dps[2] - ctrl.inner.err_last.z)/T;
+	ctrl.inner.err_dif.x = -parameter.inner.rol.kd * ( sensor.gyro.dps.x - ctrl.inner.err_last.x)/T;
+	ctrl.inner.err_dif.y = -parameter.inner.pit.kd * ( sensor.gyro.dps.y - ctrl.inner.err_last.y)/T;
+	ctrl.inner.err_dif.z = -parameter.inner.yaw.kd * ( sensor.gyro.dps.z - ctrl.inner.err_last.z)/T;
 	/* 角速度误差积分 */
 	ctrl.inner.err_inc.x += parameter.inner.rol.ki *(ctrl.inner.err.x - ctrl.inner.err_dif.x) *T;
 	ctrl.inner.err_inc.y += parameter.inner.pit.ki *(ctrl.inner.err.y - ctrl.inner.err_dif.y) *T;
@@ -115,9 +115,9 @@ void Control_Inner(float T)
 	ctrl.inner.out.z = LIMIT(ctrl.inner.out.z,-MAX_INNER_OUT,MAX_INNER_OUT);
 	
 	/* 记录历史数据 */
-	ctrl.inner.err_last.x =  phone.gyro_dps[0] ;
-	ctrl.inner.err_last.y =  phone.gyro_dps[1] ;
-	ctrl.inner.err_last.z =  phone.gyro_dps[2] ;
+	ctrl.inner.err_last.x =  sensor.gyro.dps.x ;
+	ctrl.inner.err_last.y =  sensor.gyro.dps.y ;
+	ctrl.inner.err_last.z =  sensor.gyro.dps.z ;
 	
 	/* 油门控制 */
 	Thr_Control(T);

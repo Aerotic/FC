@@ -3,7 +3,7 @@
 .\objects\dbus.o: ..\Mylib\board.h
 .\objects\dbus.o: ..\Libraries\stm32f4xx.h
 .\objects\dbus.o: ..\Libraries\core_cm4.h
-.\objects\dbus.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\dbus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\dbus.o: ..\Libraries\core_cmInstr.h
 .\objects\dbus.o: ..\Libraries\core_cmFunc.h
 .\objects\dbus.o: ..\Libraries\core_cm4_simd.h
@@ -24,8 +24,7 @@
 .\objects\dbus.o: ..\Libraries\misc.h
 .\objects\dbus.o: ..\Mylib\usart1.h
 .\objects\dbus.o: ..\Mylib\board.h
-.\objects\dbus.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\dbus.o: ..\Mylib\usart2.h
+.\objects\dbus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\dbus.o: ..\Mylib\dbus.h
 .\objects\dbus.o: ..\Mylib\softiic.h
 .\objects\dbus.o: ..\Mylib\mpu6050.h
@@ -36,7 +35,7 @@
 .\objects\dbus.o: ..\Mylib\height_control.h
 .\objects\dbus.o: ..\Mylib\time.h
 .\objects\dbus.o: ..\Mylib\control.h
-.\objects\dbus.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\dbus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\dbus.o: ..\Mylib\mymath.h
 .\objects\dbus.o: ..\Mylib\parameter.h
 .\objects\dbus.o: ..\Mylib\imu.h

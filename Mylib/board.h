@@ -12,8 +12,8 @@
 #define  RCC_LED           RCC_AHB1Periph_GPIOC
 #define  LED_PORT          GPIOC
 #define  RED_LED_Pin       GPIO_Pin_1 
-#define  GREEN_LED_Pin     GPIO_Pin_10
-#define  BLUE_LED_Pin      GPIO_Pin_12
+#define  GREEN_LED_Pin     GPIO_Pin_0
+#define  BLUE_LED_Pin      GPIO_Pin_2
 
 #define  RCC_OUT_LED       RCC_AHB1Periph_GPIOB
 #define  OUT_LED_PORT      GPIOB
@@ -43,14 +43,11 @@
 #define NVIC_GROUP   NVIC_PriorityGroup_3
 
 #include "usart1.h"
-#include "usart2.h"
 #include "dbus.h"
-
 #include "softiic.h"
 #include "mpu6050.h"
 #include "hmc5883.h"
 #include "ms5611.h"
-
 #include "led.h"
 #include "schedule.h"
 #include "height_control.h"

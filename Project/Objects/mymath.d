@@ -2,7 +2,7 @@
 .\objects\mymath.o: ..\Mylib\mymath.h
 .\objects\mymath.o: ..\Libraries\stm32f4xx.h
 .\objects\mymath.o: ..\Libraries\core_cm4.h
-.\objects\mymath.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mymath.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mymath.o: ..\Libraries\core_cmInstr.h
 .\objects\mymath.o: ..\Libraries\core_cmFunc.h
 .\objects\mymath.o: ..\Libraries\core_cm4_simd.h

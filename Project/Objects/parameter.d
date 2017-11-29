@@ -3,7 +3,7 @@
 .\objects\parameter.o: ..\Mylib\board.h
 .\objects\parameter.o: ..\Libraries\stm32f4xx.h
 .\objects\parameter.o: ..\Libraries\core_cm4.h
-.\objects\parameter.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\parameter.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\parameter.o: ..\Libraries\core_cmInstr.h
 .\objects\parameter.o: ..\Libraries\core_cmFunc.h
 .\objects\parameter.o: ..\Libraries\core_cm4_simd.h
@@ -24,8 +24,7 @@
 .\objects\parameter.o: ..\Libraries\misc.h
 .\objects\parameter.o: ..\Mylib\usart1.h
 .\objects\parameter.o: ..\Mylib\board.h
-.\objects\parameter.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\parameter.o: ..\Mylib\usart2.h
+.\objects\parameter.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\parameter.o: ..\Mylib\dbus.h
 .\objects\parameter.o: ..\Mylib\softiic.h
 .\objects\parameter.o: ..\Mylib\mpu6050.h
@@ -36,7 +35,7 @@
 .\objects\parameter.o: ..\Mylib\height_control.h
 .\objects\parameter.o: ..\Mylib\time.h
 .\objects\parameter.o: ..\Mylib\control.h
-.\objects\parameter.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\parameter.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\parameter.o: ..\Mylib\mymath.h
 .\objects\parameter.o: ..\Mylib\parameter.h
 .\objects\parameter.o: ..\Mylib\imu.h

@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\stm32f4xx_cryp.h
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\stm32f4xx.h
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\core_cm4.h
-.\objects\stm32f4xx_cryp_tdes.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_cryp_tdes.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\core_cmInstr.h
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\core_cmFunc.h
 .\objects\stm32f4xx_cryp_tdes.o: ..\Libraries\core_cm4_simd.h

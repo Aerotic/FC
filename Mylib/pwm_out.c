@@ -72,10 +72,10 @@ void TIM3_PWM_Init(uint16_t freq)
 extern float q0, q1, q2, q3;
 void Motor_Speed_Update(void)
 {
-	if( RC.CH[3]<=-650)
+	if(RC.CH[2]>=650 && RC.CH[3]<=-650)
 	{
 		
-		if(cnt>500)
+		if(cnt>800)
 		{
 			aircraft.lockchange = 1;
 			
@@ -114,16 +114,12 @@ void Motor_Speed_Update(void)
 				thr.comp = thr.value/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
 				speed.motor1 = thr.comp - ctrl.inner.out.x - ctrl.inner.out.y - ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
 				speed.motor2 = thr.comp + ctrl.inner.out.x - ctrl.inner.out.y + ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
-				speed.motor3 = thr.comp + ctrl.inner.out.x + ctrl.inner.out.  y - ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
+				speed.motor3 = thr.comp + ctrl.inner.out.x + ctrl.inner.out.y - ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
 				speed.motor4 = thr.comp - ctrl.inner.out.x + ctrl.inner.out.y + ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
-				/*
-				speed.motor1=1.5*speed.motor1;
-				speed.motor2=1.5*speed.motor2;
-				speed.motor3=1.5*speed.motor3;
-				speed.motor4=1.5*speed.motor4;
-				*/
-				
-				
+					speed.motor1 =1.2*speed.motor1;
+				speed.motor2 = 1.2*speed.motor2;
+				speed.motor3 = 1.2*speed.motor3;
+				speed.motor4 =1.2*speed.motor4; 		
 				speed.motor1 = LIMIT(speed.motor1, READY_THR*0.8f, MAX_THR *1.1f);
 				speed.motor2 = LIMIT(speed.motor2, READY_THR*0.8f, MAX_THR *1.1f);
 				speed.motor3 = LIMIT(speed.motor3, READY_THR*0.8f, MAX_THR *1.1f);
@@ -142,9 +138,8 @@ void Motor_Speed_Update(void)
 				TIM3->CCR2 = (int16_t)(MIN_MOTOR_PWM + 4*speed.motor2);
 				TIM3->CCR3 = (int16_t)(MIN_MOTOR_PWM + 4*speed.motor3);
 				TIM3->CCR4 = (int16_t)(MIN_MOTOR_PWM + 4*speed.motor4);
-				
   }
-}//RC.CH[3]
+}
 
 
 

@@ -3,7 +3,7 @@
 .\objects\buzzer.o: ..\Mylib\board.h
 .\objects\buzzer.o: ..\Libraries\stm32f4xx.h
 .\objects\buzzer.o: ..\Libraries\core_cm4.h
-.\objects\buzzer.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\buzzer.o: ..\Libraries\core_cmInstr.h
 .\objects\buzzer.o: ..\Libraries\core_cmFunc.h
 .\objects\buzzer.o: ..\Libraries\core_cm4_simd.h
@@ -24,8 +24,7 @@
 .\objects\buzzer.o: ..\Libraries\misc.h
 .\objects\buzzer.o: ..\Mylib\usart1.h
 .\objects\buzzer.o: ..\Mylib\board.h
-.\objects\buzzer.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\buzzer.o: ..\Mylib\usart2.h
+.\objects\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\buzzer.o: ..\Mylib\dbus.h
 .\objects\buzzer.o: ..\Mylib\softiic.h
 .\objects\buzzer.o: ..\Mylib\mpu6050.h
@@ -36,7 +35,7 @@
 .\objects\buzzer.o: ..\Mylib\height_control.h
 .\objects\buzzer.o: ..\Mylib\time.h
 .\objects\buzzer.o: ..\Mylib\control.h
-.\objects\buzzer.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\buzzer.o: ..\Mylib\mymath.h
 .\objects\buzzer.o: ..\Mylib\parameter.h
 .\objects\buzzer.o: ..\Mylib\imu.h

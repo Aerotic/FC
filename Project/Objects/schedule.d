@@ -3,7 +3,7 @@
 .\objects\schedule.o: ..\Mylib\board.h
 .\objects\schedule.o: ..\Libraries\stm32f4xx.h
 .\objects\schedule.o: ..\Libraries\core_cm4.h
-.\objects\schedule.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\schedule.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\schedule.o: ..\Libraries\core_cmInstr.h
 .\objects\schedule.o: ..\Libraries\core_cmFunc.h
 .\objects\schedule.o: ..\Libraries\core_cm4_simd.h
@@ -24,8 +24,7 @@
 .\objects\schedule.o: ..\Libraries\misc.h
 .\objects\schedule.o: ..\Mylib\usart1.h
 .\objects\schedule.o: ..\Mylib\board.h
-.\objects\schedule.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\schedule.o: ..\Mylib\usart2.h
+.\objects\schedule.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\schedule.o: ..\Mylib\dbus.h
 .\objects\schedule.o: ..\Mylib\softiic.h
 .\objects\schedule.o: ..\Mylib\mpu6050.h
@@ -36,7 +35,7 @@
 .\objects\schedule.o: ..\Mylib\height_control.h
 .\objects\schedule.o: ..\Mylib\time.h
 .\objects\schedule.o: ..\Mylib\control.h
-.\objects\schedule.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\schedule.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\schedule.o: ..\Mylib\mymath.h
 .\objects\schedule.o: ..\Mylib\parameter.h
 .\objects\schedule.o: ..\Mylib\imu.h

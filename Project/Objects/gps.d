@@ -3,7 +3,7 @@
 .\objects\gps.o: ..\Mylib\board.h
 .\objects\gps.o: ..\Libraries\stm32f4xx.h
 .\objects\gps.o: ..\Libraries\core_cm4.h
-.\objects\gps.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gps.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gps.o: ..\Libraries\core_cmInstr.h
 .\objects\gps.o: ..\Libraries\core_cmFunc.h
 .\objects\gps.o: ..\Libraries\core_cm4_simd.h
@@ -24,8 +24,7 @@
 .\objects\gps.o: ..\Libraries\misc.h
 .\objects\gps.o: ..\Mylib\usart1.h
 .\objects\gps.o: ..\Mylib\board.h
-.\objects\gps.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\gps.o: ..\Mylib\usart2.h
+.\objects\gps.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\gps.o: ..\Mylib\dbus.h
 .\objects\gps.o: ..\Mylib\softiic.h
 .\objects\gps.o: ..\Mylib\mpu6050.h
@@ -36,7 +35,7 @@
 .\objects\gps.o: ..\Mylib\height_control.h
 .\objects\gps.o: ..\Mylib\time.h
 .\objects\gps.o: ..\Mylib\control.h
-.\objects\gps.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\gps.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\gps.o: ..\Mylib\mymath.h
 .\objects\gps.o: ..\Mylib\parameter.h
 .\objects\gps.o: ..\Mylib\imu.h

@@ -38,8 +38,7 @@ void Update_Velocities_Positions_Z(float T)
 		/*速度校准量在[-1m/s,1/s]*/
 		z_ef.velz.correction = LIMIT(z_ef.velz.correction,-100,100);
 		/*得到地球坐标系（earth frame）下的竖直加速度*/    /*竖直方向加速度状态*/
-//		z_ef.accz.base = (sensor.acc.filter.x*vx + sensor.acc.filter.y*vy + sensor.acc.filter.z*vz)*980.0f/4096.0f-INTERTIALNAV_GRAVITY;
-		z_ef.accz.base = phone.acc[0]*vx+phone.acc[1]*vy+phone.acc[2]*vz-INTERTIALNAV_GRAVITY/100.0f;
+		z_ef.accz.base = (sensor.acc.filter.x*vx + sensor.acc.filter.y*vy + sensor.acc.filter.z*vz)*980.0f/4096.0f-INTERTIALNAV_GRAVITY;
 		/*速度增量*/
 	  z_ef.velz.increase = (z_ef.accz.base+z_ef.accz.correction) * T;
 		/*高度更新 x(k+1)=v(k)*t+0.5*a*t^2  */    /*竖直方向高度状态*/

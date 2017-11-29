@@ -1,5 +1,7 @@
 #include "imu.h"
+
 struct _angle angle;
+
 
 #define Kp 0.6f                           // proportional gain governs rate of convergence to accelerometer/magnetometer
 #define Ki 0.1f                           // integral gain governs rate of convergence of gyroscope biases
