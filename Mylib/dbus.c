@@ -65,7 +65,7 @@ void Dbus_Config()
 	
 	
 		//USART_DeInit(USART2);
-		USART_InitStructure.USART_BaudRate = 460800;   //SBUS 100K baudrate
+		USART_InitStructure.USART_BaudRate = 460800;
 		USART_InitStructure.USART_WordLength = USART_WordLength_8b;
 		USART_InitStructure.USART_StopBits = USART_StopBits_1;
 		USART_InitStructure.USART_Parity = USART_Parity_No ;
@@ -75,8 +75,6 @@ void Dbus_Config()
     
 		USART_Cmd(USART3,ENABLE);
 		USART_DMACmd(USART3,USART_DMAReq_Rx,ENABLE);
-		
-		//USART_ITConfig(USART3, USART_IT_IDLE, ENABLE);
     
     NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream1_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
@@ -117,20 +115,3 @@ void DMA1_Stream1_IRQHandler(void)
 		s_bus_get_value();
   }
 }
-//void USART3_IRQHandler(void)  
-//{
-//	
-//	uint8_t num_1;
-//	uint16_t data_len_1;
-//	data_len_1 = 128 - DMA_GetCurrDataCounter(DMA1_Stream1);
-//  num_1 = USART3->SR;
-//  num_1 = USART3->DR;
-//	DMA_Cmd(DMA1_Stream1, DISABLE);   
-//  DMA_ClearFlag(DMA1_Stream1,DMA_FLAG_TEIF1 | DMA_FLAG_TCIF1 | DMA_FLAG_DMEIF1 | DMA_FLAG_HTIF1 | DMA_FLAG_FEIF1);
-//	
-//	s_bus_get_value();
-//	
-//	DMA_SetCurrDataCounter(DMA1_Stream1,128);
-//  USART_ClearITPendingBit(USART3,USART_IT_IDLE);
-//  DMA_Cmd(DMA1_Stream1, ENABLE);
-//}
