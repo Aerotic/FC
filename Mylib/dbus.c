@@ -31,18 +31,28 @@ void s_bus_get_value(void)
 	phone.gyro_dps[1]=bf.dest;
 	for(cnt=20;cnt<24;cnt++) bf.buf[cnt-20]=rx_buffer[cnt];
 	phone.gyro_dps[2]=bf.dest;
-//	if((angle.yaw==1.0f)&&(angle.roll==2.0f)&&(angle.pitch==3.0f)&&(phone.gyro_dps[0]==4.0f)&&(phone.gyro_dps[1]==5.0f)&&(phone.gyro_dps[2]==6.0f))
-//		LED_BLUE_TOGGLE;
-//	else
-//		cnter++;
-	
-	
-	
-	
-	
-	//printf("the received data is %f\n",bf.dest);
-}
 
+}
+void acc_gyro(void)//acc in m/s^2  gyro in rad/s
+{
+	u8 cnt;
+	//get acceleration x
+	for(cnt=0;cnt<4;cnt++) bf.buf[cnt]=rx_buffer[cnt];
+	phone.acc[0]=bf.dest;
+	//get acceleration y
+	for(cnt=4;cnt<8;cnt++) bf.buf[cnt-4]=rx_buffer[cnt];
+	phone.acc[1]=bf.dest;
+	//get acceleration z
+	for(cnt=8;cnt<12;cnt++) bf.buf[cnt-8]=rx_buffer[cnt];
+	phone.acc[2]=bf.dest;
+	for(cnt=12;cnt<16;cnt++) bf.buf[cnt-12]=rx_buffer[cnt];
+	phone.gyro_rps[0]=bf.dest;
+	for(cnt=16;cnt<20;cnt++) bf.buf[cnt-16]=rx_buffer[cnt];
+	phone.gyro_rps[1]=bf.dest;
+	for(cnt=20;cnt<24;cnt++) bf.buf[cnt-20]=rx_buffer[cnt];
+	phone.gyro_rps[2]=bf.dest;
+
+}
 void Dbus_Config()
 {
 	  USART_InitTypeDef USART_InitStructure;
@@ -112,6 +122,14 @@ void DMA1_Stream1_IRQHandler(void)
 	{
 		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
 		DMA_ClearITPendingBit(DMA1_Stream5, DMA_IT_TCIF1);
-		s_bus_get_value();
+		acc_gyro();
+		float loop_time_200hz;
+			loop_time_200hz = Get_Cycle_T(1);
+			IMUupdate(0.5f *loop_time_200hz,phone.gyro_rps[0],
+																	phone.gyro_rps[1],
+																	phone.gyro_rps[2],
+																	phone.acc[0],
+																	phone.acc[1],
+																	phone.acc[2]);  /*四元数姿态解算*/
   }
 }
