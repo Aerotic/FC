@@ -3,7 +3,7 @@
 .\objects\softiic.o: ..\Mylib\board.h
 .\objects\softiic.o: ..\Libraries\stm32f4xx.h
 .\objects\softiic.o: ..\Libraries\core_cm4.h
-.\objects\softiic.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\softiic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\softiic.o: ..\Libraries\core_cmInstr.h
 .\objects\softiic.o: ..\Libraries\core_cmFunc.h
 .\objects\softiic.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\softiic.o: ..\Libraries\misc.h
 .\objects\softiic.o: ..\Mylib\usart1.h
 .\objects\softiic.o: ..\Mylib\board.h
-.\objects\softiic.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\softiic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\softiic.o: ..\Mylib\usart2.h
 .\objects\softiic.o: ..\Mylib\dbus.h
 .\objects\softiic.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\softiic.o: ..\Mylib\height_control.h
 .\objects\softiic.o: ..\Mylib\time.h
 .\objects\softiic.o: ..\Mylib\control.h
-.\objects\softiic.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\softiic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\softiic.o: ..\Mylib\mymath.h
 .\objects\softiic.o: ..\Mylib\parameter.h
 .\objects\softiic.o: ..\Mylib\imu.h

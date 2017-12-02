@@ -3,7 +3,7 @@
 .\objects\mpu6050.o: ..\Mylib\board.h
 .\objects\mpu6050.o: ..\Libraries\stm32f4xx.h
 .\objects\mpu6050.o: ..\Libraries\core_cm4.h
-.\objects\mpu6050.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mpu6050.o: ..\Libraries\core_cmInstr.h
 .\objects\mpu6050.o: ..\Libraries\core_cmFunc.h
 .\objects\mpu6050.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\mpu6050.o: ..\Libraries\misc.h
 .\objects\mpu6050.o: ..\Mylib\usart1.h
 .\objects\mpu6050.o: ..\Mylib\board.h
-.\objects\mpu6050.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\mpu6050.o: ..\Mylib\usart2.h
 .\objects\mpu6050.o: ..\Mylib\dbus.h
 .\objects\mpu6050.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\mpu6050.o: ..\Mylib\height_control.h
 .\objects\mpu6050.o: ..\Mylib\time.h
 .\objects\mpu6050.o: ..\Mylib\control.h
-.\objects\mpu6050.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\mpu6050.o: ..\Mylib\mymath.h
 .\objects\mpu6050.o: ..\Mylib\parameter.h
 .\objects\mpu6050.o: ..\Mylib\imu.h

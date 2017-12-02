@@ -3,7 +3,7 @@
 .\objects\led.o: ..\Mylib\board.h
 .\objects\led.o: ..\Libraries\stm32f4xx.h
 .\objects\led.o: ..\Libraries\core_cm4.h
-.\objects\led.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\led.o: ..\Libraries\core_cmInstr.h
 .\objects\led.o: ..\Libraries\core_cmFunc.h
 .\objects\led.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\led.o: ..\Libraries\misc.h
 .\objects\led.o: ..\Mylib\usart1.h
 .\objects\led.o: ..\Mylib\board.h
-.\objects\led.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\led.o: ..\Mylib\usart2.h
 .\objects\led.o: ..\Mylib\dbus.h
 .\objects\led.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\led.o: ..\Mylib\height_control.h
 .\objects\led.o: ..\Mylib\time.h
 .\objects\led.o: ..\Mylib\control.h
-.\objects\led.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\led.o: ..\Mylib\mymath.h
 .\objects\led.o: ..\Mylib\parameter.h
 .\objects\led.o: ..\Mylib\imu.h

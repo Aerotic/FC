@@ -3,7 +3,7 @@
 .\objects\inertialnav.o: ..\Mylib\board.h
 .\objects\inertialnav.o: ..\Libraries\stm32f4xx.h
 .\objects\inertialnav.o: ..\Libraries\core_cm4.h
-.\objects\inertialnav.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\inertialnav.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\inertialnav.o: ..\Libraries\core_cmInstr.h
 .\objects\inertialnav.o: ..\Libraries\core_cmFunc.h
 .\objects\inertialnav.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\inertialnav.o: ..\Libraries\misc.h
 .\objects\inertialnav.o: ..\Mylib\usart1.h
 .\objects\inertialnav.o: ..\Mylib\board.h
-.\objects\inertialnav.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\inertialnav.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\inertialnav.o: ..\Mylib\usart2.h
 .\objects\inertialnav.o: ..\Mylib\dbus.h
 .\objects\inertialnav.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\inertialnav.o: ..\Mylib\height_control.h
 .\objects\inertialnav.o: ..\Mylib\time.h
 .\objects\inertialnav.o: ..\Mylib\control.h
-.\objects\inertialnav.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\inertialnav.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\inertialnav.o: ..\Mylib\mymath.h
 .\objects\inertialnav.o: ..\Mylib\parameter.h
 .\objects\inertialnav.o: ..\Mylib\imu.h

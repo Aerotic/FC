@@ -3,7 +3,7 @@
 .\objects\data_send.o: ..\Mylib\board.h
 .\objects\data_send.o: ..\Libraries\stm32f4xx.h
 .\objects\data_send.o: ..\Libraries\core_cm4.h
-.\objects\data_send.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\data_send.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\data_send.o: ..\Libraries\core_cmInstr.h
 .\objects\data_send.o: ..\Libraries\core_cmFunc.h
 .\objects\data_send.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\data_send.o: ..\Libraries\misc.h
 .\objects\data_send.o: ..\Mylib\usart1.h
 .\objects\data_send.o: ..\Mylib\board.h
-.\objects\data_send.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\data_send.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\data_send.o: ..\Mylib\usart2.h
 .\objects\data_send.o: ..\Mylib\dbus.h
 .\objects\data_send.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\data_send.o: ..\Mylib\height_control.h
 .\objects\data_send.o: ..\Mylib\time.h
 .\objects\data_send.o: ..\Mylib\control.h
-.\objects\data_send.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\data_send.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\data_send.o: ..\Mylib\mymath.h
 .\objects\data_send.o: ..\Mylib\parameter.h
 .\objects\data_send.o: ..\Mylib\imu.h

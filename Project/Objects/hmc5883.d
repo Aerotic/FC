@@ -3,7 +3,7 @@
 .\objects\hmc5883.o: ..\Mylib\board.h
 .\objects\hmc5883.o: ..\Libraries\stm32f4xx.h
 .\objects\hmc5883.o: ..\Libraries\core_cm4.h
-.\objects\hmc5883.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hmc5883.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\hmc5883.o: ..\Libraries\core_cmInstr.h
 .\objects\hmc5883.o: ..\Libraries\core_cmFunc.h
 .\objects\hmc5883.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\hmc5883.o: ..\Libraries\misc.h
 .\objects\hmc5883.o: ..\Mylib\usart1.h
 .\objects\hmc5883.o: ..\Mylib\board.h
-.\objects\hmc5883.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\hmc5883.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\hmc5883.o: ..\Mylib\usart2.h
 .\objects\hmc5883.o: ..\Mylib\dbus.h
 .\objects\hmc5883.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\hmc5883.o: ..\Mylib\height_control.h
 .\objects\hmc5883.o: ..\Mylib\time.h
 .\objects\hmc5883.o: ..\Mylib\control.h
-.\objects\hmc5883.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\hmc5883.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\hmc5883.o: ..\Mylib\mymath.h
 .\objects\hmc5883.o: ..\Mylib\parameter.h
 .\objects\hmc5883.o: ..\Mylib\imu.h

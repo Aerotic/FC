@@ -3,7 +3,7 @@
 .\objects\height_control.o: ..\Mylib\board.h
 .\objects\height_control.o: ..\Libraries\stm32f4xx.h
 .\objects\height_control.o: ..\Libraries\core_cm4.h
-.\objects\height_control.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\height_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\height_control.o: ..\Libraries\core_cmInstr.h
 .\objects\height_control.o: ..\Libraries\core_cmFunc.h
 .\objects\height_control.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\height_control.o: ..\Libraries\misc.h
 .\objects\height_control.o: ..\Mylib\usart1.h
 .\objects\height_control.o: ..\Mylib\board.h
-.\objects\height_control.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\height_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\height_control.o: ..\Mylib\usart2.h
 .\objects\height_control.o: ..\Mylib\dbus.h
 .\objects\height_control.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\height_control.o: ..\Mylib\height_control.h
 .\objects\height_control.o: ..\Mylib\time.h
 .\objects\height_control.o: ..\Mylib\control.h
-.\objects\height_control.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\height_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\height_control.o: ..\Mylib\mymath.h
 .\objects\height_control.o: ..\Mylib\parameter.h
 .\objects\height_control.o: ..\Mylib\imu.h

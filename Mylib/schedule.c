@@ -32,15 +32,7 @@ void Loop_200Hz(void)	//5ms执行一次
 {
 	float loop_time_200hz;
 	loop_time_200hz = Get_Cycle_T(1);     									/*获取5ms准确时间*/
-//	IMUupdate(0.5f *loop_time_200hz,phone.gyro_rps[0],
-//																	phone.gyro_rps[1],
-//																	phone.gyro_rps[2],
-//																	phone.acc[0],
-//																	phone.acc[1],
-//																	phone.acc[2]);  /*四元数姿态解算*/
-//	//angle.pitch=phone.deg[2];
-//	angle.roll=phone.deg[1];
-//	angle.yaw=phone.deg[0];
+
 	Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
 //	Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
 }

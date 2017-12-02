@@ -2,7 +2,7 @@
 .\objects\board.o: ..\Mylib\board.h
 .\objects\board.o: ..\Libraries\stm32f4xx.h
 .\objects\board.o: ..\Libraries\core_cm4.h
-.\objects\board.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\board.o: ..\Libraries\core_cmInstr.h
 .\objects\board.o: ..\Libraries\core_cmFunc.h
 .\objects\board.o: ..\Libraries\core_cm4_simd.h
@@ -23,7 +23,7 @@
 .\objects\board.o: ..\Libraries\misc.h
 .\objects\board.o: ..\Mylib\usart1.h
 .\objects\board.o: ..\Mylib\board.h
-.\objects\board.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\board.o: ..\Mylib\usart2.h
 .\objects\board.o: ..\Mylib\dbus.h
 .\objects\board.o: ..\Mylib\softiic.h
@@ -35,7 +35,7 @@
 .\objects\board.o: ..\Mylib\height_control.h
 .\objects\board.o: ..\Mylib\time.h
 .\objects\board.o: ..\Mylib\control.h
-.\objects\board.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\board.o: ..\Mylib\mymath.h
 .\objects\board.o: ..\Mylib\parameter.h
 .\objects\board.o: ..\Mylib\imu.h

@@ -3,7 +3,7 @@
 .\objects\hcsr04.o: ..\Mylib\board.h
 .\objects\hcsr04.o: ..\Libraries\stm32f4xx.h
 .\objects\hcsr04.o: ..\Libraries\core_cm4.h
-.\objects\hcsr04.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\hcsr04.o: ..\Libraries\core_cmInstr.h
 .\objects\hcsr04.o: ..\Libraries\core_cmFunc.h
 .\objects\hcsr04.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\hcsr04.o: ..\Libraries\misc.h
 .\objects\hcsr04.o: ..\Mylib\usart1.h
 .\objects\hcsr04.o: ..\Mylib\board.h
-.\objects\hcsr04.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\hcsr04.o: ..\Mylib\usart2.h
 .\objects\hcsr04.o: ..\Mylib\dbus.h
 .\objects\hcsr04.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\hcsr04.o: ..\Mylib\height_control.h
 .\objects\hcsr04.o: ..\Mylib\time.h
 .\objects\hcsr04.o: ..\Mylib\control.h
-.\objects\hcsr04.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\hcsr04.o: ..\Mylib\mymath.h
 .\objects\hcsr04.o: ..\Mylib\parameter.h
 .\objects\hcsr04.o: ..\Mylib\imu.h

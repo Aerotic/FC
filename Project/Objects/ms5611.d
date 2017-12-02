@@ -3,7 +3,7 @@
 .\objects\ms5611.o: ..\Mylib\board.h
 .\objects\ms5611.o: ..\Libraries\stm32f4xx.h
 .\objects\ms5611.o: ..\Libraries\core_cm4.h
-.\objects\ms5611.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ms5611.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ms5611.o: ..\Libraries\core_cmInstr.h
 .\objects\ms5611.o: ..\Libraries\core_cmFunc.h
 .\objects\ms5611.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\ms5611.o: ..\Libraries\misc.h
 .\objects\ms5611.o: ..\Mylib\usart1.h
 .\objects\ms5611.o: ..\Mylib\board.h
-.\objects\ms5611.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ms5611.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ms5611.o: ..\Mylib\usart2.h
 .\objects\ms5611.o: ..\Mylib\dbus.h
 .\objects\ms5611.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\ms5611.o: ..\Mylib\height_control.h
 .\objects\ms5611.o: ..\Mylib\time.h
 .\objects\ms5611.o: ..\Mylib\control.h
-.\objects\ms5611.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\ms5611.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\ms5611.o: ..\Mylib\mymath.h
 .\objects\ms5611.o: ..\Mylib\parameter.h
 .\objects\ms5611.o: ..\Mylib\imu.h

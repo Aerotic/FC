@@ -2,7 +2,7 @@
 .\objects\pwm_in.o: ..\Mylib\board.h
 .\objects\pwm_in.o: ..\Libraries\stm32f4xx.h
 .\objects\pwm_in.o: ..\Libraries\core_cm4.h
-.\objects\pwm_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pwm_in.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\pwm_in.o: ..\Libraries\core_cmInstr.h
 .\objects\pwm_in.o: ..\Libraries\core_cmFunc.h
 .\objects\pwm_in.o: ..\Libraries\core_cm4_simd.h
@@ -23,7 +23,7 @@
 .\objects\pwm_in.o: ..\Libraries\misc.h
 .\objects\pwm_in.o: ..\Mylib\usart1.h
 .\objects\pwm_in.o: ..\Mylib\board.h
-.\objects\pwm_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\pwm_in.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\pwm_in.o: ..\Mylib\usart2.h
 .\objects\pwm_in.o: ..\Mylib\dbus.h
 .\objects\pwm_in.o: ..\Mylib\softiic.h
@@ -35,7 +35,7 @@
 .\objects\pwm_in.o: ..\Mylib\height_control.h
 .\objects\pwm_in.o: ..\Mylib\time.h
 .\objects\pwm_in.o: ..\Mylib\control.h
-.\objects\pwm_in.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\pwm_in.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\pwm_in.o: ..\Mylib\mymath.h
 .\objects\pwm_in.o: ..\Mylib\parameter.h
 .\objects\pwm_in.o: ..\Mylib\imu.h

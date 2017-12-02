@@ -3,7 +3,7 @@
 .\objects\flash.o: ..\Mylib\board.h
 .\objects\flash.o: ..\Libraries\stm32f4xx.h
 .\objects\flash.o: ..\Libraries\core_cm4.h
-.\objects\flash.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\flash.o: ..\Libraries\core_cmInstr.h
 .\objects\flash.o: ..\Libraries\core_cmFunc.h
 .\objects\flash.o: ..\Libraries\core_cm4_simd.h
@@ -24,7 +24,7 @@
 .\objects\flash.o: ..\Libraries\misc.h
 .\objects\flash.o: ..\Mylib\usart1.h
 .\objects\flash.o: ..\Mylib\board.h
-.\objects\flash.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\flash.o: ..\Mylib\usart2.h
 .\objects\flash.o: ..\Mylib\dbus.h
 .\objects\flash.o: ..\Mylib\softiic.h
@@ -36,7 +36,7 @@
 .\objects\flash.o: ..\Mylib\height_control.h
 .\objects\flash.o: ..\Mylib\time.h
 .\objects\flash.o: ..\Mylib\control.h
-.\objects\flash.o: D:\Softwares\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\flash.o: ..\Mylib\mymath.h
 .\objects\flash.o: ..\Mylib\parameter.h
 .\objects\flash.o: ..\Mylib\imu.h
