@@ -131,5 +131,6 @@ void DMA1_Stream1_IRQHandler(void)
 																	phone.acc[0],
 																	phone.acc[1],
 																	phone.acc[2]);  /*四元数姿态解算*/
+			Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
   }
 }

@@ -42,6 +42,9 @@ void DelayMs(uint32_t ms)
 
 void FlightController_board_Init(void)
 {
+		/*led初始化*/
+		Led_Init();
+		LED_BLUE_ON;
 		/*中断分组*/
 		NVIC_PriorityGroupConfig(NVIC_GROUP);
 		/*滴答定时器配置*/
@@ -52,8 +55,7 @@ void FlightController_board_Init(void)
 		
 		//LED_GREEN_ON;
 		Dbus_Config();
-		/*led初始化*/
-		Led_Init();
+		
 		/*模拟IIC初始化*/
 	//	I2C_Soft_Init();
 		/*等待100ms*/
@@ -83,17 +85,17 @@ void FlightController_board_Init(void)
 		/*读取地面气压*/
 	//	MS5611_CalOffset();
 		/*竖直方向加速度计偏差滤波*/
-	//	LPF2pSetCutoffFreq_1(100, 10);
+		LPF2pSetCutoffFreq_1(100, 10);
 		/*气压微分低通滤波*/
-	///	LPF2pSetCutoffFreq_2(200, 10);
+		LPF2pSetCutoffFreq_2(200, 10);
 		/*水平x方向加速度计偏差滤波*/
-	//	LPF2pSetCutoffFreq_3(100, 10);
+		LPF2pSetCutoffFreq_3(100, 10);
 		/*水平y方向加速度计偏差滤波*/
-	//	LPF2pSetCutoffFreq_4(100, 10);
+		LPF2pSetCutoffFreq_4(100, 10);
 		/*参考坐标系x方向加速度计偏差滤波*/
-	//	LPF2pSetCutoffFreq_5(100, 10);
+		LPF2pSetCutoffFreq_5(100, 10);
 		/*参考坐标系y方向加速度计偏差滤波*/
-	//	LPF2pSetCutoffFreq_6(100, 10);
+		LPF2pSetCutoffFreq_6(100, 10);
 		/*GPS lat速度滤波*/
 //		LPF2pSetCutoffFreq_7(100, 10);
 		/*GPS lon速度滤波*/
@@ -102,7 +104,7 @@ void FlightController_board_Init(void)
 	  Usart1_Config();
 		Dbus_Configuration();
 		/*指示灯*/
-		LED_BLUE_ON;
+		LED_BLUE_OFF;
 		/*飞机初始化完成*/
 		aircraft.init_ok=1;
 }

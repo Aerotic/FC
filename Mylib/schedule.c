@@ -21,20 +21,20 @@ void Loop_500Hz(void)	//2ms执行一次
 	//Mpu6050_Read();                       /*读取mpu6050数据*/
 	//Mpu6050_Data_Prepare();               /*为四元数做数据准备*/
 	Control_Inner(loop_time_500hz);       /*姿态内环控制*/
-	Motor_Speed_Update();                 /*更新电机转速*/
+			Motor_Speed_Update();                 /*更新电机转速*/
 	
-#ifdef SONAR_ENABLE
-	HCSR04_TRIG_TOGGLE;                   /*超声波Trig发出250hz的方波*/
-#endif
+//#ifdef SONAR_ENABLE
+//	HCSR04_TRIG_TOGGLE;                   /*超声波Trig发出250hz的方波*/
+//#endif
 }
 
 void Loop_200Hz(void)	//5ms执行一次
 {
-	float loop_time_200hz;
-	loop_time_200hz = Get_Cycle_T(1);     									/*获取5ms准确时间*/
+//	float loop_time_200hz;
+//	loop_time_200hz = Get_Cycle_T(1);     									/*获取5ms准确时间*/
 
-	Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
-//	Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
+//	
+////	Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
 }
 
 void Loop_100Hz(void)	//10ms执行一次
