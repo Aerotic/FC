@@ -3,7 +3,7 @@
 
 #include "board.h"
  
-#define INTERTIALNAV_GRAVITY 843.665f  //972.665f
+#define INTERTIALNAV_GRAVITY 860.665f  //972.665f
 
 struct _z_efdata
 			 {

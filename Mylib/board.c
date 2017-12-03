@@ -43,6 +43,9 @@ void DelayMs(uint32_t ms)
 
 void FlightController_board_Init(void)
 {
+		/*led初始化*/
+		Led_Init();
+	LED_BLUE_ON;
 		/*中断分组*/
 		NVIC_PriorityGroupConfig(NVIC_GROUP);
 		/*滴答定时器配置*/
@@ -51,10 +54,9 @@ void FlightController_board_Init(void)
 		Get_parameter();
 		/*Dbus遥控器配置*/
 		Dbus_Config();
-		/*led初始化*/
-		Led_Init();
+		
 		/*蜂鸣器初始化*/
-		Buzzer_Init();
+		//Buzzer_Init();
 		/*模拟IIC初始化*/
 		I2C_Soft_Init();
 		/*等待100ms*/
@@ -68,11 +70,11 @@ void FlightController_board_Init(void)
 		/*串口5初始化，接GPS*/	
 		Uart5_Config();
 		/*ms5611初始化*/
-		MS5611_Init();
+		//MS5611_Init();
 		/*hmc5883初始化*/
-		Hmc5883_Init();
+	//	Hmc5883_Init();
 		/*超声波初始化*/
-		Hcsr04_Init();
+		//Hcsr04_Init();
 		/*时间初始化*/
 		Cycle_Time_Init();
 		/*读取陀螺仪静态输出*/
@@ -80,7 +82,7 @@ void FlightController_board_Init(void)
 		/*读取加速度水平输出*/
 		Mpu6050_CalOffset_Acc();
 		/*校准磁力计*/
-	  Mag_Correct();
+	  //Mag_Correct();
 		/*读取地面气压*/
 		MS5611_CalOffset();
 		/*竖直方向加速度计偏差滤波*/
@@ -108,7 +110,7 @@ void FlightController_board_Init(void)
 // 		/*nrf24l01接收模式*/			
 // 		NRF24L01_RX_Mode();
 		/*指示灯*/
-//		LED_GREEN_ON;
+		LED_BLUE_OFF;
 		/*飞机初始化完成*/
 		aircraft.init_ok=1;
 }

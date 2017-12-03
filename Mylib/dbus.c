@@ -36,58 +36,29 @@ void s_bus_get_value(void)
 		RC.CH_LAST[1] = RC.CH[1];
 		RC.CH_LAST[2] = RC.CH[2];
 		RC.CH_LAST[3] = RC.CH[3];
-			//”““°∏À∫·œÚ  ∑∂Œß+-660
+		//»’±æ ÷
+
+		//”““°∏À∫·œÚ  ∑∂Œß+-660
 		sbus_decode_buffer[0] = (sbus_rx_buffer[0]| (sbus_rx_buffer[1] << 8)) & 0x07ff; //!< Channel 0
 		RC.CH[0] = (my_deathzoom(sbus_decode_buffer[0]-1024, 5));
 		//”““°∏À◊›œÚ   ∑∂Œß+-660
 		sbus_decode_buffer[1] = ((sbus_rx_buffer[1] >> 3) | (sbus_rx_buffer[2] << 5)) & 0x07ff;
-		RC.CH[1] = (my_deathzoom(sbus_decode_buffer[1]-1024, 5));
+		RC.CH[3] = (my_deathzoom(sbus_decode_buffer[1]-1024, 5));
 		//◊Û“°∏À∫·œÚ   ∑∂Œß+-660
 		sbus_decode_buffer[2]= ((sbus_rx_buffer[2] >> 6) | (sbus_rx_buffer[3] << 2) | (sbus_rx_buffer[4] << 10)) & 0x07ff; //!< Channel 2
 		RC.CH[2] = my_deathzoom(sbus_decode_buffer[2]-1024, 5);
 		//◊Û“°∏À◊›œÚ   ∑∂Œß+-660
 		sbus_decode_buffer[3] = ((sbus_rx_buffer[4] >> 1) | (sbus_rx_buffer[5] << 7)) & 0x07ff; //!< Channel 3
-		RC.CH[3] = (my_deathzoom(sbus_decode_buffer[3]-1024, 5));
+		RC.CH[1] = (my_deathzoom(sbus_decode_buffer[3]-1024, 5));
 		//◊Û±ﬂø™πÿ  132 …œ÷–œ¬
 		RC.CH[4] = ((sbus_rx_buffer[5] >> 4)& 0x000C) >> 2; //!< Switch left
 		//”“±ﬂø™πÿ  132 …œ÷–œ¬
 		RC.CH[5] = ((sbus_rx_buffer[5] >> 4)& 0x0003); //!< Switch right9 / 9  
-	/*
-		//”““°∏À∫·œÚ  ∑∂Œß+-660
-		sbus_decode_buffer[0] = (sbus_rx_buffer[1]| (sbus_rx_buffer[2] << 8)) & 0x07ff; //!< Channel 0
-		RC.CH[0] = (my_deathzoom(sbus_decode_buffer[0]-1024, 5));
-		//”““°∏À◊›œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[1] = ((sbus_rx_buffer[2] >> 3) | (sbus_rx_buffer[3] << 5)) & 0x07ff;
-		RC.CH[1] = -(my_deathzoom(sbus_decode_buffer[1]-1024, 5));
-		//◊Û“°∏À∫·œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[2]= ((sbus_rx_buffer[3] >> 6) | (sbus_rx_buffer[4] << 2) | (sbus_rx_buffer[4] << 10)) & 0x07ff; //!< Channel 2
-		RC.CH[2] = my_deathzoom(sbus_decode_buffer[2]-1024, 5);
-		//◊Û“°∏À◊›œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[3] = ((sbus_rx_buffer[4] >> 1) | (sbus_rx_buffer[5] << 7)) & 0x07ff; //!< Channel 3
-		RC.CH[3] = -(my_deathzoom(sbus_decode_buffer[3]-1024, 5));
-		//◊Û±ﬂø™πÿ  132 …œ÷–œ¬
-		RC.CH[4] = ((sbus_rx_buffer[6] >> 4)& 0x000C) >> 2; //!< Switch left
-		//”“±ﬂø™πÿ  132 …œ÷–œ¬
-		RC.CH[5] = ((sbus_rx_buffer[6] >> 4)& 0x0003); //!< Switch right9 / 9  
-		*/
-/*			
-			//”““°∏À∫·œÚ  ∑∂Œß+-660
-		sbus_decode_buffer[0] = (sbus_rx_buffer[1]| (sbus_rx_buffer[2] << 8)) & 0x07ff; //!< Channel 0
-		RC.CH[2] = (my_deathzoom(sbus_decode_buffer[0]-1024, 5));
-		//”““°∏À◊›œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[1] = ((sbus_rx_buffer[2] >> 3) | (sbus_rx_buffer[3] << 5)) & 0x07ff; //!< Channel 1
-		RC.CH[1] = -(my_deathzoom(sbus_decode_buffer[1]-1024, 5));
-		//◊Û“°∏À∫·œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[2]= ((sbus_rx_buffer[3] >> 6) | (sbus_rx_buffer[4] << 2) | (sbus_rx_buffer[5] << 10)) & 0x07ff; //!< Channel 2
-		RC.CH[3] = my_deathzoom(sbus_decode_buffer[2]-1024, 5);
-		//◊Û“°∏À◊›œÚ   ∑∂Œß+-660
-		sbus_decode_buffer[3] = ((sbus_rx_buffer[5] >> 1) | (sbus_rx_buffer[6] << 7)) & 0x07ff; //!< Channel 3
-		RC.CH[0] = -(my_deathzoom(sbus_decode_buffer[3]-1024, 5));
-		//◊Û±ﬂø™πÿ  132 …œ÷–œ¬
-		RC.CH[4] = ((sbus_rx_buffer[6] >> 4)& 0x000C) >> 2; //!< Switch left
-		//”“±ﬂø™πÿ  132 …œ÷–œ¬
-		RC.CH[5] = ((sbus_rx_buffer[6] >> 4)& 0x0003); //!< Switch right9 / 9  
-		*/
+		
+				if(RC.CH[5]==2)
+		{
+			aircraft.unlock = 0;
+		}
 		RC.CH_DIF[0] = MIN((float)(RC.CH[0] - RC.CH_LAST[0])/dbus_loop_time ,1000);
 		RC.CH_DIF[1] = MIN((float)(RC.CH[1] - RC.CH_LAST[1])/dbus_loop_time ,1000);
 		RC.CH_DIF[2] = MIN((float)(RC.CH[2] - RC.CH_LAST[2])/dbus_loop_time ,1000);
@@ -95,10 +66,10 @@ void s_bus_get_value(void)
 		
 		RC.NoSignal = 0;
 		RC.OutofControl = 0;
-		if(RC.CH[4]==1)
-				LED_BLUE_ON;
-		else
-				LED_BLUE_OFF;
+//		if(RC.CH[4]==1)
+//				LED_BLUE_ON;
+//		else
+//				LED_BLUE_OFF;
 }
 
 
