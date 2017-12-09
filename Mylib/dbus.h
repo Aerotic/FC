@@ -27,6 +27,7 @@ void DMA1_Stream1_IRQHandler(void);
 //void USART3_IRQHandler(void);  
 void RC_Check(float T,float OutofControl_ms);
 void s_bus_get_value(void);
+void acc_gyro(void);
 
 
 #endif /*_Dbus_H*/

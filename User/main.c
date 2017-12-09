@@ -4,7 +4,6 @@ int main(void)
 {
 	//≥ı ºªØ
  	FlightController_board_Init();
-	printf("the beginning \n");
 //	LED_BLUE_ON;
 	while(1)
 	{		

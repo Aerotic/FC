@@ -1,5 +1,5 @@
 #include "dbus.h"
-
+#define RadToDeg 57.295779
 struct _RC RC;
 struct _SENSOR phone;
 
@@ -51,7 +51,9 @@ void acc_gyro(void)//acc in m/s^2  gyro in rad/s
 	phone.gyro_rps[1]=bf.dest;
 	for(cnt=20;cnt<24;cnt++) bf.buf[cnt-20]=rx_buffer[cnt];
 	phone.gyro_rps[2]=bf.dest;
-
+	phone.gyro_dps[0]=RadToDeg*phone.gyro_rps[0];
+	phone.gyro_dps[1]=RadToDeg*phone.gyro_rps[1];
+	phone.gyro_dps[2]=RadToDeg*phone.gyro_rps[2];
 }
 void Dbus_Config()
 {
@@ -112,7 +114,7 @@ void Dbus_Config()
     DMA_Init(DMA1_Stream1,&DMA_InitStructure);
 
 
-    DMA_ITConfig(DMA1_Stream1,DMA_IT_TC,ENABLE);
+    //DMA_ITConfig(DMA1_Stream1,DMA_IT_TC,ENABLE);
     DMA_Cmd(DMA1_Stream1,ENABLE);	
 		
 }
@@ -122,15 +124,7 @@ void DMA1_Stream1_IRQHandler(void)
 	{
 		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
 		DMA_ClearITPendingBit(DMA1_Stream5, DMA_IT_TCIF1);
-		acc_gyro();
-		float loop_time_200hz;
-			loop_time_200hz = Get_Cycle_T(1);
-			IMUupdate(0.5f *loop_time_200hz,phone.gyro_rps[0],
-																	phone.gyro_rps[1],
-																	phone.gyro_rps[2],
-																	phone.acc[0],
-																	phone.acc[1],
-																	phone.acc[2]);  /*四元数姿态解算*/
-			Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
+		
+
   }
 }

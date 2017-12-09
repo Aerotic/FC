@@ -51,43 +51,15 @@ void FlightController_board_Init(void)
 		SysTick_Configuration();
 		/*读取参数*/
 		Get_parameter();
-		/*Dbus遥控器配置*/
-		
-		//LED_GREEN_ON;
 		Dbus_Config();
-		
-		/*模拟IIC初始化*/
-	//	I2C_Soft_Init();
-		/*等待100ms*/
-		//DelayMs(100);
-		/*mpu6050初始化*/
-		//Mpu6050_Init(1000,20);
 		/*定时器3配置 产生pwm控制电机*/
 		TIM3_PWM_Init(400);
-		/*PPM接收机*/	
-		//PWM_IN_Init();
-		/*串口5初始化，接GPS*/	
-		//Uart5_Config();
-		/*ms5611初始化*/
-	//	MS5611_Init();
-		/*hmc5883初始化*/
-		//Hmc5883_Init();
-		/*超声波初始化*/
-		//Hcsr04_Init();
+
 		/*时间初始化*/
 		Cycle_Time_Init();
-		/*读取陀螺仪静态输出*/
-	//	Mpu6050_CalOffset_Gyro();
-		/*读取加速度水平输出*/
-	//	Mpu6050_CalOffset_Acc();
-		/*校准磁力计*/
-	  //Mag_Correct();
-		/*读取地面气压*/
-	//	MS5611_CalOffset();
+
 		/*竖直方向加速度计偏差滤波*/
 		LPF2pSetCutoffFreq_1(100, 10);
-		/*气压微分低通滤波*/
-		LPF2pSetCutoffFreq_2(200, 10);
 		/*水平x方向加速度计偏差滤波*/
 		LPF2pSetCutoffFreq_3(100, 10);
 		/*水平y方向加速度计偏差滤波*/
@@ -96,10 +68,7 @@ void FlightController_board_Init(void)
 		LPF2pSetCutoffFreq_5(100, 10);
 		/*参考坐标系y方向加速度计偏差滤波*/
 		LPF2pSetCutoffFreq_6(100, 10);
-		/*GPS lat速度滤波*/
-//		LPF2pSetCutoffFreq_7(100, 10);
-		/*GPS lon速度滤波*/
-	//	LPF2pSetCutoffFreq_8(100, 10);
+
 		/*串口1初始化,数据推送*/
 	  Usart1_Config();
 		Dbus_Configuration();

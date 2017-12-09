@@ -91,7 +91,7 @@ void DMA1_Stream5_IRQHandler(void)
 	{
 		DMA_ClearFlag(DMA1_Stream5, DMA_FLAG_TCIF5);
 		DMA_ClearITPendingBit(DMA1_Stream5, DMA_IT_TCIF5);
-		LED_BLUE_TOGGLE;
+		//LED_BLUE_TOGGLE;
 		dbus_get_value();
 		
   }
@@ -143,7 +143,7 @@ void dbus_get_value(void)
 		RC.CH[4] = ((sbus_rx_buffer[5] >> 4)& 0x000C) >> 2; //!< Switch left
 		//右边开关  132 上中下
 		RC.CH[5] = ((sbus_rx_buffer[5] >> 4)& 0x0003); //!< Switch right9 / 9  
-		
+		//强制停机
 		if(RC.CH[5]==2)
 		{
 			aircraft.unlock = 0;
@@ -155,9 +155,9 @@ void dbus_get_value(void)
 		
 		RC.NoSignal = 0;
 		RC.OutofControl = 0;
-		if(RC.CH[4]==1)
-				LED_BLUE_ON;
-		else
-				LED_BLUE_OFF;
+//		if(RC.CH[4]==1)
+//				LED_BLUE_ON;
+//		else
+//				LED_BLUE_OFF;
 }
 	

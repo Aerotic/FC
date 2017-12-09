@@ -116,12 +116,13 @@ void Motor_Speed_Update(void)
 				speed.motor2 = thr.comp + ctrl.inner.out.x - ctrl.inner.out.y + ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
 				speed.motor3 = thr.comp + ctrl.inner.out.x + ctrl.inner.out.  y - ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
 				speed.motor4 = thr.comp - ctrl.inner.out.x + ctrl.inner.out.y + ctrl.inner.out.z + (hgt_ctrl.acc.out + hgt_ctrl.vel.out)/cos(angle.pitch/RtA)/cos(angle.roll/RtA);
-				/*
-				speed.motor1=1.5*speed.motor1;
-				speed.motor2=1.5*speed.motor2;
-				speed.motor3=1.5*speed.motor3;
-				speed.motor4=1.5*speed.motor4;
-				*/
+				
+			
+//				speed.motor1=1.2*speed.motor1;
+//				speed.motor2=1.2*speed.motor2;
+//				speed.motor3=1.2*speed.motor3;
+//				speed.motor4=1.2*speed.motor4;
+				
 				
 				
 				speed.motor1 = LIMIT(speed.motor1, READY_THR*0.8f, MAX_THR *1.1f);

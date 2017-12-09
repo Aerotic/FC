@@ -13,16 +13,9 @@ void Control_Outer(float T)
 	if(ctrl.outer.exp.z>180) ctrl.outer.exp.z-=360;
 	if(ctrl.outer.exp.z<-180) ctrl.outer.exp.z+=360;
 	
-	if(RC.CH[5] == 3)
-	{
+
 		ctrl.outer.exp.x = RC.CH[0]*MAX_CTRL_ANGLE/660;
 		ctrl.outer.exp.y = RC.CH[1]*MAX_CTRL_ANGLE/660;
-	}
-	else
-	{
-		ctrl.outer.exp.x = RC.CH[0]*MAX_CTRL_ANGLE*0.2f/660 + gpslevelcon.ROLL_OUT;
-		ctrl.outer.exp.y = RC.CH[1]*MAX_CTRL_ANGLE*0.2f/660 + gpslevelcon.PITCH_OUT;
-	}
   /* µÃµ½½Ç¶ÈÎó²î */
 	ctrl.outer.err.x = ctrl.outer.exp.x - angle.roll ;
 	ctrl.outer.err.y = ctrl.outer.exp.y - angle.pitch ;
