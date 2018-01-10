@@ -21,22 +21,18 @@ void Loop_500Hz(void)	//2ms执行一次
 //		
 //	}
 	if(DMA_GetFlagStatus(DMA1_Stream1,DMA_FLAG_TCIF1))
-		acc_gyro();
+		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
 	
 	Control_Inner(loop_time_500hz);       /*姿态内环控制*/
 			Motor_Speed_Update();                 /*更新电机转速*/
+		
 }
 
 void Loop_200Hz(void)	//5ms执行一次
 {
 		float loop_time_200hz;
 			loop_time_200hz = Get_Cycle_T(1);
-			IMUupdate(0.5f *loop_time_200hz,phone.gyro_rps[0],
-																	phone.gyro_rps[1],
-																	phone.gyro_rps[2],
-																	phone.acc[0],
-																	phone.acc[1],
-																	phone.acc[2]);  /*四元数姿态解算*/
+			/*四元数姿态解算*/
 			Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
 			Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
 }
@@ -45,7 +41,7 @@ void Loop_100Hz(void)	//10ms执行一次
 {
 	float loop_time_100hz;
 	loop_time_100hz = Get_Cycle_T(2);     				/*获取10ms准确时间*/
-
+	MS5611_Update();
 	
  	Height_Acceleration_Control(loop_time_100hz); /*加速度油门补偿，实时进行，增大阻尼*/
 			
@@ -75,7 +71,7 @@ void Loop_20Hz(void)	//50ms执行一次1
 	 {
 		  timer_50ms = 0;
 		 
-			LED_GREEN_TOGGLE;   //呼吸灯，1s闪烁1次
+			LED_RED_TOGGLE;   //呼吸灯，1s闪烁1次
 	 }
  }
 void Loop_5Hz(void)

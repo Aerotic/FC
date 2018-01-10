@@ -25,7 +25,7 @@
 .\objects\gps.o: ..\Mylib\usart1.h
 .\objects\gps.o: ..\Mylib\board.h
 .\objects\gps.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\gps.o: ..\Mylib\usart2.h
+.\objects\gps.o: ..\Mylib\android.h
 .\objects\gps.o: ..\Mylib\dbus.h
 .\objects\gps.o: ..\Mylib\softiic.h
 .\objects\gps.o: ..\Mylib\mpu6050.h

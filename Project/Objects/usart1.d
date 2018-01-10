@@ -23,7 +23,7 @@
 .\objects\usart1.o: ..\Libraries\stm32f4xx_usart.h
 .\objects\usart1.o: ..\Libraries\misc.h
 .\objects\usart1.o: ..\Mylib\usart1.h
-.\objects\usart1.o: ..\Mylib\usart2.h
+.\objects\usart1.o: ..\Mylib\android.h
 .\objects\usart1.o: ..\Mylib\board.h
 .\objects\usart1.o: ..\Mylib\dbus.h
 .\objects\usart1.o: ..\Mylib\softiic.h

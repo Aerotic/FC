@@ -25,7 +25,7 @@
 .\objects\flash.o: ..\Mylib\usart1.h
 .\objects\flash.o: ..\Mylib\board.h
 .\objects\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\flash.o: ..\Mylib\usart2.h
+.\objects\flash.o: ..\Mylib\android.h
 .\objects\flash.o: ..\Mylib\dbus.h
 .\objects\flash.o: ..\Mylib\softiic.h
 .\objects\flash.o: ..\Mylib\mpu6050.h

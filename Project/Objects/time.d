@@ -25,7 +25,7 @@
 .\objects\time.o: ..\Mylib\usart1.h
 .\objects\time.o: ..\Mylib\board.h
 .\objects\time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\time.o: ..\Mylib\usart2.h
+.\objects\time.o: ..\Mylib\android.h
 .\objects\time.o: ..\Mylib\dbus.h
 .\objects\time.o: ..\Mylib\softiic.h
 .\objects\time.o: ..\Mylib\mpu6050.h

@@ -25,7 +25,7 @@
 .\objects\softiic.o: ..\Mylib\usart1.h
 .\objects\softiic.o: ..\Mylib\board.h
 .\objects\softiic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\softiic.o: ..\Mylib\usart2.h
+.\objects\softiic.o: ..\Mylib\android.h
 .\objects\softiic.o: ..\Mylib\dbus.h
 .\objects\softiic.o: ..\Mylib\softiic.h
 .\objects\softiic.o: ..\Mylib\mpu6050.h

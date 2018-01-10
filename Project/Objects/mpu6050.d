@@ -25,7 +25,7 @@
 .\objects\mpu6050.o: ..\Mylib\usart1.h
 .\objects\mpu6050.o: ..\Mylib\board.h
 .\objects\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\mpu6050.o: ..\Mylib\usart2.h
+.\objects\mpu6050.o: ..\Mylib\android.h
 .\objects\mpu6050.o: ..\Mylib\dbus.h
 .\objects\mpu6050.o: ..\Mylib\softiic.h
 .\objects\mpu6050.o: ..\Mylib\mpu6050.h

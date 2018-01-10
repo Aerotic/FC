@@ -25,7 +25,7 @@
 .\objects\data_send.o: ..\Mylib\usart1.h
 .\objects\data_send.o: ..\Mylib\board.h
 .\objects\data_send.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\data_send.o: ..\Mylib\usart2.h
+.\objects\data_send.o: ..\Mylib\android.h
 .\objects\data_send.o: ..\Mylib\dbus.h
 .\objects\data_send.o: ..\Mylib\softiic.h
 .\objects\data_send.o: ..\Mylib\mpu6050.h

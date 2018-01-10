@@ -11,8 +11,8 @@
 /***************LED GPIO∂®“Â******************/
 #define  RCC_LED           RCC_AHB1Periph_GPIOC
 #define  LED_PORT          GPIOC
-#define  RED_LED_Pin       GPIO_Pin_1 
-#define  GREEN_LED_Pin     GPIO_Pin_10
+#define  RED_LED_Pin       GPIO_Pin_5 
+#define  GREEN_LED_Pin     GPIO_Pin_4
 #define  BLUE_LED_Pin      GPIO_Pin_12
 
 #define  RCC_OUT_LED       RCC_AHB1Periph_GPIOB
@@ -43,7 +43,7 @@
 #define NVIC_GROUP   NVIC_PriorityGroup_3
 
 #include "usart1.h"
-#include "usart2.h"
+#include "android.h"
 #include "dbus.h"
 
 #include "softiic.h"

@@ -25,7 +25,7 @@
 .\objects\stm32f4xx_it.o: ..\Mylib\usart1.h
 .\objects\stm32f4xx_it.o: ..\Mylib\board.h
 .\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\stm32f4xx_it.o: ..\Mylib\usart2.h
+.\objects\stm32f4xx_it.o: ..\Mylib\android.h
 .\objects\stm32f4xx_it.o: ..\Mylib\dbus.h
 .\objects\stm32f4xx_it.o: ..\Mylib\softiic.h
 .\objects\stm32f4xx_it.o: ..\Mylib\mpu6050.h

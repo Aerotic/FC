@@ -25,7 +25,7 @@
 .\objects\height_control.o: ..\Mylib\usart1.h
 .\objects\height_control.o: ..\Mylib\board.h
 .\objects\height_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\height_control.o: ..\Mylib\usart2.h
+.\objects\height_control.o: ..\Mylib\android.h
 .\objects\height_control.o: ..\Mylib\dbus.h
 .\objects\height_control.o: ..\Mylib\softiic.h
 .\objects\height_control.o: ..\Mylib\mpu6050.h

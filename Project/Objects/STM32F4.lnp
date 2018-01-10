@@ -28,7 +28,7 @@
 ".\objects\spi.o"
 ".\objects\24l01.o"
 ".\objects\flash.o"
-".\objects\usart2.o"
+".\objects\android.o"
 ".\objects\misc.o"
 ".\objects\stm32f4xx_tim.o"
 ".\objects\stm32f4xx_adc.o"

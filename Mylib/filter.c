@@ -17,7 +17,6 @@ void LPF2pSetCutoffFreq_1(float sample_freq, float cutoff_freq)
 		fr= sample_freq/cutoff_freq;
 		ohm=tanf(M_PI_F/fr);
 		c=1.0f+2.0f*cosf(M_PI_F/4.0f)*ohm + ohm*ohm;
-	
     _cutoff_freq1 = cutoff_freq;
     if (_cutoff_freq1 > 0.0f) 
 		{

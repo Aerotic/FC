@@ -25,7 +25,7 @@
 .\objects\hmc5883.o: ..\Mylib\usart1.h
 .\objects\hmc5883.o: ..\Mylib\board.h
 .\objects\hmc5883.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\hmc5883.o: ..\Mylib\usart2.h
+.\objects\hmc5883.o: ..\Mylib\android.h
 .\objects\hmc5883.o: ..\Mylib\dbus.h
 .\objects\hmc5883.o: ..\Mylib\softiic.h
 .\objects\hmc5883.o: ..\Mylib\mpu6050.h

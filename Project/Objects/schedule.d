@@ -25,7 +25,7 @@
 .\objects\schedule.o: ..\Mylib\usart1.h
 .\objects\schedule.o: ..\Mylib\board.h
 .\objects\schedule.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\schedule.o: ..\Mylib\usart2.h
+.\objects\schedule.o: ..\Mylib\android.h
 .\objects\schedule.o: ..\Mylib\dbus.h
 .\objects\schedule.o: ..\Mylib\softiic.h
 .\objects\schedule.o: ..\Mylib\mpu6050.h

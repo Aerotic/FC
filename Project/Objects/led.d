@@ -25,7 +25,7 @@
 .\objects\led.o: ..\Mylib\usart1.h
 .\objects\led.o: ..\Mylib\board.h
 .\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\led.o: ..\Mylib\usart2.h
+.\objects\led.o: ..\Mylib\android.h
 .\objects\led.o: ..\Mylib\dbus.h
 .\objects\led.o: ..\Mylib\softiic.h
 .\objects\led.o: ..\Mylib\mpu6050.h

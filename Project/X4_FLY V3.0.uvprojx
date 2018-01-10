@@ -530,14 +530,9 @@
               <FilePath>..\Mylib\flash.c</FilePath>
             </File>
             <File>
-              <FileName>usart2.c</FileName>
+              <FileName>android.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Mylib\usart2.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart2.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Mylib\usart2.h</FilePath>
+              <FilePath>..\Mylib\android.c</FilePath>
             </File>
           </Files>
         </Group>

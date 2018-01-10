@@ -25,7 +25,7 @@
 .\objects\parameter.o: ..\Mylib\usart1.h
 .\objects\parameter.o: ..\Mylib\board.h
 .\objects\parameter.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\parameter.o: ..\Mylib\usart2.h
+.\objects\parameter.o: ..\Mylib\android.h
 .\objects\parameter.o: ..\Mylib\dbus.h
 .\objects\parameter.o: ..\Mylib\softiic.h
 .\objects\parameter.o: ..\Mylib\mpu6050.h

@@ -25,7 +25,7 @@
 .\objects\uart5.o: ..\Mylib\usart1.h
 .\objects\uart5.o: ..\Mylib\board.h
 .\objects\uart5.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\uart5.o: ..\Mylib\usart2.h
+.\objects\uart5.o: ..\Mylib\android.h
 .\objects\uart5.o: ..\Mylib\dbus.h
 .\objects\uart5.o: ..\Mylib\softiic.h
 .\objects\uart5.o: ..\Mylib\mpu6050.h

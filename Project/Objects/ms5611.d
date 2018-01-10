@@ -25,7 +25,7 @@
 .\objects\ms5611.o: ..\Mylib\usart1.h
 .\objects\ms5611.o: ..\Mylib\board.h
 .\objects\ms5611.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ms5611.o: ..\Mylib\usart2.h
+.\objects\ms5611.o: ..\Mylib\android.h
 .\objects\ms5611.o: ..\Mylib\dbus.h
 .\objects\ms5611.o: ..\Mylib\softiic.h
 .\objects\ms5611.o: ..\Mylib\mpu6050.h

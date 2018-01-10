@@ -44,20 +44,24 @@ void FlightController_board_Init(void)
 {
 		/*led初始化*/
 		Led_Init();
-		LED_BLUE_ON;
+		/*模拟IIC初始化*/
+		I2C_Soft_Init();
+		//LED_BLUE_ON;
 		/*中断分组*/
 		NVIC_PriorityGroupConfig(NVIC_GROUP);
 		/*滴答定时器配置*/
 		SysTick_Configuration();
 		/*读取参数*/
 		Get_parameter();
-		Dbus_Config();
+		Android_Serialport_Config();
 		/*定时器3配置 产生pwm控制电机*/
 		TIM3_PWM_Init(400);
 
 		/*时间初始化*/
 		Cycle_Time_Init();
-
+		/*ms5611初始化*/
+		MS5611_Init();
+		MS5611_CalOffset();
 		/*竖直方向加速度计偏差滤波*/
 		LPF2pSetCutoffFreq_1(100, 10);
 		/*水平x方向加速度计偏差滤波*/
@@ -70,7 +74,7 @@ void FlightController_board_Init(void)
 		LPF2pSetCutoffFreq_6(100, 10);
 
 		/*串口1初始化,数据推送*/
-	  Usart1_Config();
+	  //Usart1_Config();
 		Dbus_Configuration();
 		/*指示灯*/
 		LED_BLUE_OFF;

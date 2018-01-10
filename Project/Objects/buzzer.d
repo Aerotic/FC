@@ -25,7 +25,7 @@
 .\objects\buzzer.o: ..\Mylib\usart1.h
 .\objects\buzzer.o: ..\Mylib\board.h
 .\objects\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\buzzer.o: ..\Mylib\usart2.h
+.\objects\buzzer.o: ..\Mylib\android.h
 .\objects\buzzer.o: ..\Mylib\dbus.h
 .\objects\buzzer.o: ..\Mylib\softiic.h
 .\objects\buzzer.o: ..\Mylib\mpu6050.h

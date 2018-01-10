@@ -25,7 +25,7 @@
 .\objects\filter.o: ..\Mylib\usart1.h
 .\objects\filter.o: ..\Mylib\board.h
 .\objects\filter.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\filter.o: ..\Mylib\usart2.h
+.\objects\filter.o: ..\Mylib\android.h
 .\objects\filter.o: ..\Mylib\dbus.h
 .\objects\filter.o: ..\Mylib\softiic.h
 .\objects\filter.o: ..\Mylib\mpu6050.h

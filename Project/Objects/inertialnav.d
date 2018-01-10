@@ -25,7 +25,7 @@
 .\objects\inertialnav.o: ..\Mylib\usart1.h
 .\objects\inertialnav.o: ..\Mylib\board.h
 .\objects\inertialnav.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\inertialnav.o: ..\Mylib\usart2.h
+.\objects\inertialnav.o: ..\Mylib\android.h
 .\objects\inertialnav.o: ..\Mylib\dbus.h
 .\objects\inertialnav.o: ..\Mylib\softiic.h
 .\objects\inertialnav.o: ..\Mylib\mpu6050.h

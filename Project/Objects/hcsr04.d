@@ -25,7 +25,7 @@
 .\objects\hcsr04.o: ..\Mylib\usart1.h
 .\objects\hcsr04.o: ..\Mylib\board.h
 .\objects\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\hcsr04.o: ..\Mylib\usart2.h
+.\objects\hcsr04.o: ..\Mylib\android.h
 .\objects\hcsr04.o: ..\Mylib\dbus.h
 .\objects\hcsr04.o: ..\Mylib\softiic.h
 .\objects\hcsr04.o: ..\Mylib\mpu6050.h

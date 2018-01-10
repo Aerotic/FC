@@ -25,7 +25,7 @@
 .\objects\pwm_out.o: ..\Mylib\usart1.h
 .\objects\pwm_out.o: ..\Mylib\board.h
 .\objects\pwm_out.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\pwm_out.o: ..\Mylib\usart2.h
+.\objects\pwm_out.o: ..\Mylib\android.h
 .\objects\pwm_out.o: ..\Mylib\dbus.h
 .\objects\pwm_out.o: ..\Mylib\softiic.h
 .\objects\pwm_out.o: ..\Mylib\mpu6050.h
