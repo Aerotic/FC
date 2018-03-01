@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: ¦ÌVision V5.21.1.0
 Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 1, 1, LIC=JL2Y8-377IT-DKNBN-YUI6P-E2BWX-G6LUD
+License Information: 1 2, 3, LIC=ZB4HL-0W1U0-UHQ8H-W13TV-AFN8U-13I4A
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.21a
@@ -21,28 +21,24 @@ Target DLL:      CMSIS_AGDI.dll V1.26.5.0
 Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
-C:\Users\Aero\Desktop\FC\trunk\Project\X4_FLY V3.0.uvprojx
-Project File Date:  11/16/2017
+V:\FC\trunk\Project\X4_FLY V3.0.uvprojx
+Project File Date:  02/03/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32F4_FC'
-compiling board.c...
-..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Mylib\board.c: 1 warning, 0 errors
 compiling stm32f4xx_it.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\User\stm32f4xx_it.c: 1 warning, 0 errors
+compiling board.c...
+..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\board.c: 1 warning, 0 errors
 compiling main.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\User\main.c: 1 warning, 0 errors
-compiling schedule.c...
-..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Mylib\schedule.c: 1 warning, 0 errors
 compiling softiic.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -51,18 +47,22 @@ compiling mpu6050.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\mpu6050.c: 1 warning, 0 errors
-compiling ms5611.c...
+compiling schedule.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Mylib\ms5611.c: 1 warning, 0 errors
-compiling hmc5883.c...
-..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Mylib\hmc5883.c: 1 warning, 0 errors
+..\Mylib\schedule.c: 1 warning, 0 errors
 compiling imu.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\imu.c: 1 warning, 0 errors
+compiling hmc5883.c...
+..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\hmc5883.c: 1 warning, 0 errors
+compiling ms5611.c...
+..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\ms5611.c: 1 warning, 0 errors
 compiling dbus.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -76,14 +76,14 @@ adToDeg*phone.gyro_rps[1];
   	phone.gyro_dps[2]=
 adToDeg*phone.gyro_rps[2];
 ..\Mylib\dbus.c: 4 warnings, 0 errors
-compiling control.c...
-..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Mylib\control.c: 1 warning, 0 errors
 compiling height_control.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\height_control.c: 1 warning, 0 errors
+compiling control.c...
+..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\control.c: 1 warning, 0 errors
 compiling pwm_in.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -100,12 +100,6 @@ compiling usart1.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\usart1.c: 1 warning, 0 errors
-compiling uart5.c...
-..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Mylib\uart5.c(141): warning:  #550-D: variable "i" was set but never used
-  	u16 i;
-..\Mylib\uart5.c: 2 warnings, 0 errors
 compiling data_send.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -114,10 +108,12 @@ compiling time.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\time.c: 1 warning, 0 errors
-compiling buzzer.c...
+compiling uart5.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Mylib\buzzer.c: 1 warning, 0 errors
+..\Mylib\uart5.c(141): warning:  #550-D: variable "i" was set but never used
+  	u16 i;
+..\Mylib\uart5.c: 2 warnings, 0 errors
 compiling led.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -126,6 +122,11 @@ compiling parameter.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Mylib\parameter.c: 1 warning, 0 errors
+compiling buzzer.c...
+..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\buzzer.c: 1 warning, 0 errors
+compiling mymath.c...
 compiling filter.c...
 ..\Mylib\usart2.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -164,17 +165,29 @@ compiling usart2.c...
 ..\Mylib\usart2.c(87): warning:  #177-D: variable "sbus_decode_buffer" was declared but never referenced
   	int16_t sbus_decode_buffer[4];
 ..\Mylib\usart2.c: 3 warnings, 0 errors
-linking...
-Program Size: Code=44200 RO-data=824 RW-data=1464 ZI-data=5672  
-FromELF: creating hex file...
-".\Objects\STM32F4.axf" - 0 Error(s), 38 Warning(s).
+compiling misc.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_syscfg.c...
+assembling startup_stm32f4xx.s...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_cryp.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cryp_aes.c...
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Aero\Desktop\FC\trunk\Project\RTE
+  V:\FC\trunk\Project\RTE
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:07
+Project build/rebuild aborted.
+Build Time Elapsed:  00:00:31
 </pre>
 </body>
 </html>
