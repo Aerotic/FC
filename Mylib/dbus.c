@@ -13,13 +13,10 @@ void RC_Check(float T,float OutofControl_ms)
 		}
 		if(RC.OutofControl == 1)
 		{
-			/*失控时原地降落*/
-			RC.CH[0] = 0;
-			RC.CH[1] = 0;
-			RC.CH[2] = 0;
-			RC.CH[3] = -260;//油门34.2% 54cm/s下降
-			RC.CH[4] = 3;
-			RC.CH[5] = 2;	
+			TIM3->CCR1=(int16_t)(4000);
+			TIM3->CCR2=(int16_t)(4000);
+			TIM3->CCR3=(int16_t)(4000);
+			TIM3->CCR4=(int16_t)(4000);
 		}
 }
 void Dbus_Configuration(void)
@@ -152,7 +149,7 @@ void dbus_get_value(void)
 //		RC.CH_DIF[1] = MIN((float)(RC.CH[1] - RC.CH_LAST[1])/dbus_loop_time ,1000);
 //		RC.CH_DIF[2] = MIN((float)(RC.CH[2] - RC.CH_LAST[2])/dbus_loop_time ,1000);
 //		RC.CH_DIF[3] = MIN((float)(RC.CH[3] - RC.CH_LAST[3])/dbus_loop_time ,1000);
-		
+		MotorTest();
 		RC.NoSignal = 0;
 		RC.OutofControl = 0;
 //		if(RC.CH[4]==1)

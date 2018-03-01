@@ -24,6 +24,7 @@ extern struct _speed speed;
 extern struct _aircraft aircraft;
 
 void TIM3_PWM_Init(uint16_t freq);
+void MotorTest();
 void AndroidRPM(void);
 void Motor_Speed_Update(void);
 

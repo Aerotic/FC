@@ -59,14 +59,14 @@ void TIM3_PWM_Init(uint16_t freq)
 		TIM3->CCR2=MAX_MOTOR_PWM;
 		TIM3->CCR3=MAX_MOTOR_PWM;
 		TIM3->CCR4=MAX_MOTOR_PWM;
-		DelayMs(2000);
+		DelayMs(2500);
 #endif
 
 		TIM3->CCR1=MIN_MOTOR_PWM;
 		TIM3->CCR2=MIN_MOTOR_PWM;
 		TIM3->CCR3=MIN_MOTOR_PWM;
 		TIM3->CCR4=MIN_MOTOR_PWM;
-		DelayMs(2000);	
+		DelayMs(2500);	
 }
 
 extern float q0, q1, q2, q3;
@@ -87,6 +87,13 @@ void AndroidRPM(void)
 			TIM3->CCR4=(int16_t)((rx_buffer[6]<<8) | rx_buffer[7]);
 		}
 
+}
+void MotorTest()
+{
+			TIM3->CCR1= (int16_t)(RC.CH[0]+4000);
+			TIM3->CCR2= (int16_t)(RC.CH[1]+4000);
+			TIM3->CCR3= (int16_t)(RC.CH[2]+4000);
+			TIM3->CCR4= (int16_t)(RC.CH[3]+4000);
 }
 void Motor_Speed_Update(void)
 {
