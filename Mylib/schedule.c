@@ -47,19 +47,19 @@ void Loop_100Hz(void)	//10ms执行一次
 	
 	MS5611_Update();															/*气压计高度更新 cm*/
 	
-#ifdef SONAR
-	Hcsr04_Filter();                     				  /*超声波高度滤波 m*/
-#endif
-	
-	Get_Direction(loop_time_100hz);       				/*获取偏北角度，磁力计*/
+//#ifdef SONAR
+//	Hcsr04_Filter();                     				  /*超声波高度滤波 m*/
+//#endif
+//	
+//	Get_Direction(loop_time_100hz);       				/*获取偏北角度，磁力计*/
 	
  	Height_Acceleration_Control(loop_time_100hz); /*加速度油门补偿，实时进行，增大阻尼*/
 			
-	Update_GPS_states(loop_time_100hz);           /*更新GPS状态，加速度、速度、位置*/
+	//Update_GPS_states(loop_time_100hz);           /*更新GPS状态，加速度、速度、位置*/
 	
 //	RC_Check(loop_time_100hz,200);      					/*遥控器失控检查，在200ms内没有收到数据认为失控*/
 	
-	Led_Task(loop_time_100hz);                    /*LED任务*/
+	//Led_Task(loop_time_100hz);                    /*LED任务*/
 }
 
 void Loop_50Hz(void)	//20ms执行一次
@@ -68,7 +68,7 @@ void Loop_50Hz(void)	//20ms执行一次
 	loop_time_50hz = Get_Cycle_T(3);						/*获取20ms准确时间*/
 	
 	Height_Velocity_Control(loop_time_50hz);		/*高度速度控制*/
-	GPSlevel_Velocity_Control(loop_time_50hz);  /*GPS水平速度控制*/
+	//GPSlevel_Velocity_Control(loop_time_50hz);  /*GPS水平速度控制*/
 	
 //	RECEIVE_RADIO_DATA();                       /*读取leader发送来的数据*/
 }
@@ -79,7 +79,7 @@ void Loop_20Hz(void)	//50ms执行一次
 	loop_time_20hz = Get_Cycle_T(4);            /*获取50ms的准确时间*/
 	
 	Height_Position_Control(loop_time_20hz);    /*高度位置控制*/
-	GPSlevel_Position_Control(loop_time_20hz);  /*GPS水平位置控制*/
+//	GPSlevel_Position_Control(loop_time_20hz);  /*GPS水平位置控制*/
 	static u8 timer_50ms = 0;//记录50ms次数
 	if(++timer_50ms > 10)
 	 {
