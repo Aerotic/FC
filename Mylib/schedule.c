@@ -20,30 +20,31 @@ void Loop_500Hz(void)	//2ms执行一次
 //		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
 //		
 //	}
-	if(DMA_GetFlagStatus(DMA1_Stream1,DMA_FLAG_TCIF1))
-		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
+//	if(DMA_GetFlagStatus(DMA1_Stream1,DMA_FLAG_TCIF1))
+//		DMA_ClearFlag(DMA1_Stream1, DMA_FLAG_TCIF1);
 	
-	Control_Inner(loop_time_500hz);       /*姿态内环控制*/
-			Motor_Speed_Update();                 /*更新电机转速*/
+	//Control_Inner(loop_time_500hz);       /*姿态内环控制*/
+			
+	//Motor_Speed_Update();                 /*更新电机转速*/
 		
 }
 
 void Loop_200Hz(void)	//5ms执行一次
 {
 		float loop_time_200hz;
-			loop_time_200hz = Get_Cycle_T(1);
-			/*四元数姿态解算*/
-			Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
-			Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
+//			loop_time_200hz = Get_Cycle_T(1);
+//			/*四元数姿态解算*/
+//			Control_Outer(loop_time_200hz);       									/*姿态外环控制*/
+//			Update_Velocities_Positions_Z(loop_time_200hz); 				/*更新Z方向速度和位置*/
 }
 
 void Loop_100Hz(void)	//10ms执行一次
 {
 	float loop_time_100hz;
 	loop_time_100hz = Get_Cycle_T(2);     				/*获取10ms准确时间*/
-	MS5611_Update();
-	
- 	Height_Acceleration_Control(loop_time_100hz); /*加速度油门补偿，实时进行，增大阻尼*/
+//	MS5611_Update();
+//	
+// 	Height_Acceleration_Control(loop_time_100hz); /*加速度油门补偿，实时进行，增大阻尼*/
 			
 
 	
@@ -54,10 +55,10 @@ void Loop_100Hz(void)	//10ms执行一次
 
 void Loop_50Hz(void)	//20ms执行一次
 {
-	float loop_time_50hz;
-	loop_time_50hz = Get_Cycle_T(3);						/*获取20ms准确时间*/
-	
-	Height_Velocity_Control(loop_time_50hz);		/*高度速度控制*/
+//	float loop_time_50hz;
+//	loop_time_50hz = Get_Cycle_T(3);						/*获取20ms准确时间*/
+//	
+//	Height_Velocity_Control(loop_time_50hz);		/*高度速度控制*/
 }
 
 void Loop_20Hz(void)	//50ms执行一次1
@@ -65,7 +66,7 @@ void Loop_20Hz(void)	//50ms执行一次1
 	float loop_time_20hz;
 	loop_time_20hz = Get_Cycle_T(4);            /*获取50ms的准确时间*/
 	
-	Height_Position_Control(loop_time_20hz);    /*高度位置控制*/
+//	Height_Position_Control(loop_time_20hz);    /*高度位置控制*/
 	static u8 timer_50ms = 0;//记录50ms次数
 	if(++timer_50ms > 10)
 	 {

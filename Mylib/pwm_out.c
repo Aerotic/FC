@@ -70,6 +70,24 @@ void TIM3_PWM_Init(uint16_t freq)
 }
 
 extern float q0, q1, q2, q3;
+void AndroidRPM(void)
+{
+		if(RC.CH[5]==2)
+		{
+			TIM3->CCR1=(int16_t)(4000);
+			TIM3->CCR2=(int16_t)(4000);
+			TIM3->CCR3=(int16_t)(4000);
+			TIM3->CCR4=(int16_t)(4000);
+		}
+		else
+		{
+			TIM3->CCR1=(int16_t)((rx_buffer[0]<<8) | rx_buffer[1]);
+			TIM3->CCR2=(int16_t)((rx_buffer[2]<<8) | rx_buffer[3]);
+			TIM3->CCR3=(int16_t)((rx_buffer[4]<<8) | rx_buffer[5]);
+			TIM3->CCR4=(int16_t)((rx_buffer[6]<<8) | rx_buffer[7]);
+		}
+
+}
 void Motor_Speed_Update(void)
 {
 	if( RC.CH[3]<=-650)

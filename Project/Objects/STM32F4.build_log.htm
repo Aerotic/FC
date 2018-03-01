@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: ¦ÌVision V5.21.1.0
 Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 2, 2.@D.C, LIC=ZB4CX-HDFSB-11RPY-I46RW-J4CUR-LWSX1
+License Information: 1 2, 3, LIC=ZB4HL-0W1U0-UHQ8H-W13TV-AFN8U-13I4A
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.21a
@@ -21,20 +21,37 @@ Target DLL:      CMSIS_AGDI.dll V1.26.5.0
 Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
-C:\Users\Aero\Documents\UPUPOO\Docker\config\PhoneUav\FC\branches\RCtest\Project\X4_FLY V3.0.uvprojx
-Project File Date:  12/23/2017
+C:\Users\Aero\Desktop\FC\branches\RCtest\Project\X4_FLY V3.0.uvprojx
+Project File Date:  02/03/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32F4_FC'
-".\Objects\STM32F4.axf" - 0 Error(s), 0 Warning(s).
+compiling dbus.c...
+..\Mylib\android.h(32): warning:  #1295-D: Deprecated declaration SendToAndroid - give arg types
+  void SendToAndroid();
+..\Mylib\android.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\dbus.c(88): warning:  #177-D: variable "sbus_decode_buffer" was declared but never referenced
+  	int16_t sbus_decode_buffer[4];
+..\Mylib\dbus.c: 3 warnings, 0 errors
+compiling pwm_out.c...
+..\Mylib\android.h(32): warning:  #1295-D: Deprecated declaration SendToAndroid - give arg types
+  void SendToAndroid();
+..\Mylib\android.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Mylib\pwm_out.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=41408 RO-data=888 RW-data=1464 ZI-data=5560  
+FromELF: creating hex file...
+".\Objects\STM32F4.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Aero\Documents\UPUPOO\Docker\config\PhoneUav\FC\branches\RCtest\Project\RTE
+  C:\Users\Aero\Desktop\FC\branches\RCtest\Project\RTE
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

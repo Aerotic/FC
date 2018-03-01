@@ -173,6 +173,7 @@ void USART3_IRQHandler(void)
   DMA_ClearFlag(DMA1_Stream1,DMA_FLAG_TEIF1 | DMA_FLAG_TCIF1 | DMA_FLAG_DMEIF1 | DMA_FLAG_HTIF1 | DMA_FLAG_FEIF1);
 	DMA_SetCurrDataCounter(DMA1_Stream1,128);
   USART_ClearITPendingBit(USART3,USART_IT_IDLE);
+	AndroidRPM();
   DMA_Cmd(DMA1_Stream1, ENABLE);
 }
 void SendToAndroid()

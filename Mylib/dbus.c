@@ -144,15 +144,15 @@ void dbus_get_value(void)
 		//右边开关  132 上中下
 		RC.CH[5] = ((sbus_rx_buffer[5] >> 4)& 0x0003); //!< Switch right9 / 9  
 		//强制停机
-		if(RC.CH[5]==2)
+		if(RC.CH[5]!=2)
 		{
-			aircraft.unlock = 0;
+			SendToAndroid();
 		}
 //		RC.CH_DIF[0] = MIN((float)(RC.CH[0] - RC.CH_LAST[0])/dbus_loop_time ,1000);
 //		RC.CH_DIF[1] = MIN((float)(RC.CH[1] - RC.CH_LAST[1])/dbus_loop_time ,1000);
 //		RC.CH_DIF[2] = MIN((float)(RC.CH[2] - RC.CH_LAST[2])/dbus_loop_time ,1000);
 //		RC.CH_DIF[3] = MIN((float)(RC.CH[3] - RC.CH_LAST[3])/dbus_loop_time ,1000);
-		SendToAndroid();
+		
 		RC.NoSignal = 0;
 		RC.OutofControl = 0;
 //		if(RC.CH[4]==1)
